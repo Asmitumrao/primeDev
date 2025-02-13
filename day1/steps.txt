@@ -1,0 +1,9 @@
+git init
+git add <file name>
+git commit -m"message" -m"description"
+// if not configured remote branch  
+    git remote name <url>
+// if branch does not exits in remote server
+    git push --set-upstream name master
+// else 
+    git push
