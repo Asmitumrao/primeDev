@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bZbdeBYQm-M?si=A6ML7Bze2wvkGHS-"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+        <script>
+            const iframe = document.querySelector('iframe');
+            const [a,videoId] = window.location.search.split('=');
+            iframe.src = `https://www.youtube.com/embed/${videoId}`;
+            console.log(videoId);
+
+
+            
+            const setHistory = (videoId) => {
+                    const historyData = localStorage.getItem('history');
+                
+                    if(historyData===null)
+                        {
+                            const historyArray = [];
+                            historyArray.push(videoId);
+                            localStorage.setItem("history",JSON.stringify(historyArray));
+                            // console.log(historyArray);
+                        }
+                    else
+                        {
+                        const historyArray = JSON.parse(historyData);
+                        historyArray.push(videoId);
+                        localStorage.setItem('history',JSON.stringify(historyArray));
+                        // console.log(historyArray);
+                        }
+            };
+            setHistory(videoId);
+            console.log(localStorage.getItem('history'));
+    
+            // iframe.addEventListener('load',()=> setHistory(videoId));
+
+
+           
+        </script>
+</body>
+
+</html>

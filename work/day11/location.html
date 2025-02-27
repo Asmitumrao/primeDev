@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        nav {
+            padding: 1.5 rem;
+
+        }
+        input {
+            padding: 0.25rem, 0.5rem;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #container div {
+            padding: 10px;
+            margin: 10px;
+            background-color: #e1e1e1;
+            cursor: pointer;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        #container div:hover {
+            background-color: #d1d1d1;
+        }
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #fafafa;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <input type="text" onkeyup="handleSearch(event)">
+        <div id="container"></div>
+    </nav>
+    <main>
+    </main>
+    <script src="location.js"></script>
+    
+</body>
+</html>

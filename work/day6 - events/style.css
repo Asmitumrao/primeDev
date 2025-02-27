@@ -1,0 +1,26 @@
+#parent
+{
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px;
+}
+.child
+{
+    width:20rem;
+    height: 20rem;
+    margin: 2rem;
+    border-radius: 2rem;
+    background-color: #f1f1f1;
+    padding: 2rem;
+
+    /* height: 50%; */
+    /* background-color: red; */
+}
+.child:hover
+{
+    transform:scaleX(1.1);
+    transition: transform 0.5s;
+}
