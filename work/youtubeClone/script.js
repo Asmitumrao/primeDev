@@ -5752,12 +5752,15 @@ const showUI=(list)=>
         const newCard = document.createElement("div");
         newCard.className="card";
         newCard.innerHTML=`
-         <img src="${element.videoThumbnails[0].url}" alt='thumbnail' onmouseover=handleHover(event,${idx})=>
-         <div class="content">
-             <h3>${element.title}</h3>
-             <p>${element.author}</p>
-             <p>${element.viewCountText}</p>
-             <p>${element.publishedText}</p>
+         <img src="${element.videoThumbnails[0].url}" alt='thumbnail'>
+            <div class="card-details">
+                <img src="${element.videoThumbnails[1].url}" alt="profile" class="profile-pic">
+                <div class="details">
+                    <h4>${element.title}</h4>
+                    <p>${element.author}</p>
+                    <p>${element.viewCountText}</p>
+                </div>
+            </div>
         </div>`
 
         newCard.addEventListener("click",()=>handeCardClick(element));
