@@ -1,24 +1,35 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img src="assets/logoYoutube.png" alt="" width="180px" height="70px">
         <div id="search">
-            <div>  
-                <input type="text" id="search-text" placeholder="Search" onkeyup="showSuggestion(event)"><button onclick="handleSearch(event)">  <i class="fa-solid fa-magnifying-glass" style="color: #7b7979;"></i></button>
+            <div>
+                <input type="text" id="search-text" placeholder="Search" onkeyup="showSuggestion(event)"><button
+                    onclick="handleSearch(event)"> <i class="fa-solid fa-magnifying-glass"
+                        style="color: #7b7979;"></i></button>
             </div>
             <div id="suggestion">
-               
+
             </div>
         </div>
         <div id="profile" width="1000px">
@@ -26,13 +37,67 @@
     </header>
     <aside>
         <aside>
-            <h2 id="history">history</h2>
+            <div>
+                <div id="home-button" class="side-setting">
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                    <p>Home</p>
+                </div>
+                <div id="shorts-button" class="side-setting">
+                    <i class="fa-solid fa-circle-play"></i>
+                    <p>shorts</p>
+                </div>
+                <div id="subscription-button" class="side-setting">
+                    <i class="fa-solid fa-credit-card"></i>
+                    <p>Subscription</p>
+                </div>
+                <div id="music-button" class="side-setting">
+                    <i class="fa-solid fa-play"></i>
+                    <p>youtube Music</p>
+                </div>
+            </div>
+            <hr>
+            <div>
+                <div class="side-setting">
+                    <h4>you ></h4>
+                </div>
+                <div id="history-button" class="side-setting">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <p>History</p>
+                </div>
+                <div id="playlist-button" class="side-setting">
+                    <i class="fa-brands fa-playstation"></i>
+                    <p>Playlist</p>
+                </div>
+                <div id="video-button" class="side-setting">
+                    <i class="fa-solid fa-film"></i>
+                    <p>Your videos</p>
+                </div>
+                <div id="watchlater-button" class="side-setting">
+                    <i class="fa-solid fa-clock" style="color: #ffffff;"></i>
+                    <p>Watch Later</p>
+                </div>
+                <div id="like-button" class="side-setting">
+                    <i class="fa-solid fa-thumbs-up"></i>
+                    <p>Liked videos</p>
+                </div>
+                <div id="download-button" class="side-setting">
+                    <i class="fa-solid fa-arrow-down"></i>
+                    <p>Downloads</p>
+                </div>
+            </div>
+            <hr>
+            <div></div>
+            <div></div>
+            <div></div>
+
         </aside>
     </aside>
     <main>
 
     </main>
 </body>
-<script src="script.js"/></script>
+<script src="script.js" />
+</script>
 <script src="autoComplete.js"></script>
+
 </html>

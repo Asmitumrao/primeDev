@@ -5727,7 +5727,7 @@ const data=
     ]
 
     const root=document.querySelector("main");
-    const history =document.querySelector("#history");
+    const history =document.querySelector("#history-button");
     
 
     history.addEventListener("click",()=>historyPage());
